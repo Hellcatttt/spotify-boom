@@ -1,0 +1,18 @@
+{% load static %}
+<html>
+<head>
+	<title>Playlist</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'style/style.css' %}">
+</head>
+<body>
+	{% include 'header.html' %}
+	<div style="display: none">
+<div class="box">
+		{% include 'audio.html' %}
+	</div>
+</div>
+	<div  id="music_box"></div>
+ 	<script type="text/javascript" src="{% static 'scripts/script.js' %}"></script>
+</body>
+
+</html>

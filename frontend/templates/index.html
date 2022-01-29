@@ -1,0 +1,23 @@
+{% load static %}
+
+<html>
+<head>
+	<title>Music blog</title>
+<!-- 	<link rel="stylesheet" type="text/css" href="style/style.css">
+ -->    
+ 	<link rel='stylesheet' href='{% static "style/style.css" %}'/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Gloria+Hallelujah&family=Merienda&family=Satisfy&display=swap" rel="stylesheet">
+</head>
+<body>
+	{% include 'header.html' %}
+	{% block content %}{% endblock content %}
+	<span style="display:none" csrf="{{ csrf_token }}" id="csrftoken"></span>
+
+
+
+<script type="text/javascript" src="{% static 'scripts/script.js' %}"></script> 
+
+</body>
+</html>

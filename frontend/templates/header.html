@@ -1,0 +1,17 @@
+<div>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+ 		<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    				<input type="checkbox" id="active">
+    				<label for="active" class="menu-btn"><span></span></label>
+    				<label for="active" class="close"></label>
+    				<div class="wrapper">
+    		  <ul>
+<li><a href="{% url 'accounts:main' %}">Home</a></li>
+<li><a href="{% url 'accounts:about' %}">Playlist</a></li>
+<li><a href="{% url 'accounts:upload_track_page' %}">Upload_track</a></li>
+<li><a href="https://google.com">News</a></li>
+<li><a href="{% url 'accounts:sign_in' %}">Sign_in</a></li>
+</ul>
+</div>

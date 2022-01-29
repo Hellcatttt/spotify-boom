@@ -1,0 +1,27 @@
+{% extends "index.html" %}
+{% load static %}
+{% block content %}
+<div class="spotify"><p>Spotify</p></div>
+<div class="input">
+		<div class="mb15">
+			<div><b>Track</b></div>
+				<input id="song_name_input" type="text" name="search"></input>
+		</div>
+		<div class="mb15">
+			<div><b>Artist name</b></div>
+				<input id="artist_input" type="text" name="search">
+		</div>		
+		<div class="mb15">
+			<div><b>File</b></div>
+			<br>
+			<label for="file_input">
+			<a class="btn" >📎</a>
+			</label>
+			<input style="display: none;" id="file_input" type="file" name="file_input">
+		</div>	
+		<div>
+			<button class="btn" onclick="upload_track()">Upload</button>
+		</div>
+</div>
+{% endblock content %}
+
